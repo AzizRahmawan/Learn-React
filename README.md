@@ -1,29 +1,41 @@
 # Documentation
-<h1>Cara install react dengan vite</h1>
-1. Ketik : npm init vite@latest nama_folder
-2. Ketik : npm install
+# Cara Install React dengan Vite
+1. Ketik: 
+   ```bash
+   npm init vite@latest nama_folder
 
-<h1>Cara Menambahkan Tailwind dan Preline(Tailwind)</h1>
-1. Ketik : npm install tailwindcss@latest
-2. Ketik : npm i -D tailwindcss postcss autoprefixer
-3. Ketik : npx tailwindcss init -p
-4. Ketik : npm install preline
-5. Edit file tailwind.config.js, 
-  content: [
-    './*.html',
-    './src/**/*.{js,jsx}',
-    './node_modules/preline/*.js'
-  ],
-  dan
-    plugins: [
-    // eslint-disable-next-line no-undef
-    require('preline/plugin'),
-    ]
-6. Import ke "src/style.css"
+# Cara Menambahkan Tailwind dan Preline(Tailwind)
+1. Ketik :
+   ```bash
+   npm install tailwindcss@latest
+3. Ketik :
+   ```bash
+   npm i -D tailwindcss postcss autoprefixer
+5. Ketik :
+   ```bash
+   npx tailwindcss init -p
+7. Ketik :
+   ```bash
+   npm install preline
+9. Edit file tailwind.config.js:
+   ```bash
+   content: [
+     './*.html',
+     './src/**/*.{js,jsx}',
+     './node_modules/preline/*.js'
+   ],
+   ```JSX
+     plugins: [
+     require('preline/plugin'),
+     ] 
+
+10. Import ke "src/style.css"
+    ```CSS 
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-7. Lalu import ke "src/main.jsx"
+11. Lalu import ke "src/main.jsx"
+    ```JSX
     import './style.css'
     import ReactDOM from 'react-dom/client'
     import App from './App.jsx'
