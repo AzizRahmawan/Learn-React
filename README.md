@@ -24,10 +24,10 @@
      './src/**/*.{js,jsx}',
      './node_modules/preline/*.js'
    ],
-   ```JSX
+   JSX
      plugins: [
      require('preline/plugin'),
-     ] 
+   ] 
 
 10. Import ke "src/style.css"
     ```CSS 
