@@ -8,7 +8,7 @@
 1. Ketik :
    ```bash
    npm install tailwindcss@latest
-3. Ketik :
+3. Atau Ketik :
    ```bash
    npm i -D tailwindcss postcss autoprefixer
 5. Ketik :
