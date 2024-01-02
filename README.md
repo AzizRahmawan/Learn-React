@@ -24,8 +24,7 @@
      './src/**/*.{js,jsx}',
      './node_modules/preline/*.js'
    ],
-   JSX
-     plugins: [
+   plugins: [
      require('preline/plugin'),
    ] 
 
